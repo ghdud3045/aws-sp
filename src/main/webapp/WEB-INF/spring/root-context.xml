@@ -18,4 +18,19 @@
 		<bean id="hds" class="com.zaxxer.hikari.HikariDataSource">
 			<constructor-arg ref="hc"/>
 		</bean>
+		
+		
+		<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="hds"/>
+		<property name="typeAliasesPackage" value="com.bdi.sp.vo"/>
+		<property name="mapperLocations" value="classpath:mapper/*.xml"/>
+		</bean>
+		
+		<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory"></constructor-arg>
+		</bean>
+		
+		
+		
+		
 </beans>

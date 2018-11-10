@@ -120,7 +120,7 @@
 		</dependency>
 
 		<!-- 1. mariadb-client 2. hikaricp 3. mybatis 4. mybatis-spring 5. spring-jdbc 
-			6. jackson-core 7. jackson-databind 8. spring-test-->
+			6. jackson-core 7. jackson-databind 8. spring-test -->
 
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
@@ -169,6 +169,13 @@
 			<artifactId>spring-test</artifactId>
 			<version>4.3.8.RELEASE</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.20</version>
+			<scope>provided</scope>
 		</dependency>
 
 
